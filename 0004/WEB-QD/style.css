@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	overflow:auto;
+	position:absolute;
+	font-family:"Microsoft Yahei";
+	background:#eee;
+	opacity:0.8;
+}
+.container{
+	width:1000px;
+	margin:0 auto;
+}
+header{
+	width:900px;
+	margin-left:-400px;
+	margin:60px auto 40px 130px;
+}
+dl dt{
+	font-size:18px;
+	font-weight:700;
+	margin:30px 90px 10px;
+}
+dl dd{
+	font-size:14px;	
+	font-weight:500px;
+	margin:10px 90px 60px;
+}
+.red{
+	color:#f00;
+	font-weight:800;
+}
+.css{
+	margin-top:300px;
+}

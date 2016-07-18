@@ -1,0 +1,192 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+div.all{
+	position:relative;
+	min-height:600px;
+}
+/* box和flexbox 对比*/
+div.box{
+	width:200px;
+	height:200px;
+	font-size:12px;
+	font-color:#666;
+	font-family:'arial';
+	line-height:15px;
+}
+div#box1{
+	position:absolute;
+	top:30%;
+	left:3%;
+}
+div#box2{
+	position:absolute;
+	top:30%;;
+	left:20%;
+}
+div.div1,div.div2{
+	background-color:#999;
+	width:150px;
+	height:150px;
+	margin:0 auto;
+	border:1px dotted #000;
+}
+div.h1,div.h2{
+	width:120px;
+	height:120px;
+	border:none;
+	margin:0 auto;
+	background-color:#add8e6;
+}
+div.h1-1,div.h2-1{
+	width:90px;
+	height:90px;
+	margin:0 auto;
+	border:none;
+	background-color:#ffb6c1;
+}
+div.h1-2,div.h2-2{
+	width:60px;
+	height:60px;
+	margin:0 auto;
+	background-color:#ff8c00;
+	vertical-align:middle;
+}
+div.h1-2{
+	border:1px solid red;
+}
+div.h2{
+	border:1px solid red;
+}
+
+/* 兼容性只做-webkit适应  Flex-box columns分栏*/
+div.flexbox{
+	width:400px;
+	height:160px;
+	position:absolute;
+	top:180px;            
+	left:50%;
+	border:3px solid #f4a460;
+	background-color:#3cb371;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+div.flexbox span{
+	line-height:22px;
+	margin:0 auto;
+}
+article{
+	width:100%;
+	position:relative;
+	-webkit-column-rule-style:dotted;
+	-webkit-column-count:3;
+	-webkit-column-width:100px;
+	column-width:100px;
+	column-count:3;
+	column-rule-style:dotted;
+}
+/* 旧版盒子居中布局,以盒子中心居中 */
+div.old{
+	position:relative;
+	background-color:#b0c4de;
+	top:60px;
+	left:50%;
+	display:-webkit-box;
+	display:box;
+	-webkit-box-pack:center;
+	box-pack:center;
+	-webkit-box-align:center;
+	box-align:center;
+	-webkit-box-orient:horizontal;
+	box-orient:horizontal;
+}
+div.old p.o1{
+	background-color:#9370db;
+}
+div.old p.o2{
+	background-color:#98fb98;
+}
+div.old p.o3{
+	background-color:#dda0dd;
+}
+div.old p{
+	width:60px;
+	height:60px;
+}
+/* Flex-box  水平垂直分栏以及排序 */
+div.d1{
+	position:relative;
+	left:50%;
+	top:280px;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+}
+div.d2{
+	position:relative;
+	top:300px;
+	left:50%;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+}
+.d1,.d2,.d1 p,.d2 p,.old{
+	display:-webkit-flex;
+	display:flex;
+	width:400px;
+	height:100px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+div.d1 p.p1{
+	background-color:#f5deb3;
+	-webkit-flex:1;
+	-webkit-order:2;
+	flex:1;
+	order:2;
+}
+div.d1 p.p2{
+	background-color:#40e0d0;
+	-webkit-flex:2;
+	-webkit-order:3;
+	flex:2;
+	order:3;
+}
+div.d1 p.p3{
+	background-color:#ff6347;
+	-webkit-flex:3;
+	-webkit-order:1;
+	flex:3;
+	order:1;
+}
+div.d2 p.p4{
+	background-color:#00ff7f;
+	-webkit-flex:1;
+	-webkit-order:3;
+	flex:1;
+	order:3;
+}
+div.d2 p.p5{
+	background-color:#87ceeb;
+	-webkit-flex:1;
+	-webkit-order:2;
+	flex:1;
+	order:2;
+}
+div.d2 p.p6{
+	background-color:#fa8072;
+	-webkit-flex:1;
+	-webkit-order:1;
+	-webkit-flex:1;
+	-webkit-order:1;
+}
+.d1 p,.d2 p{
+	-webkit-justify-content:center;
+	justify-content:center;
+	-webkit-align-items:center;
+	align-items:center;
+}

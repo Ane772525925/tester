@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="keywords" content="关键字" />
+    <meta name="description" content="网站描述" />
+    <meta charset="UTF-8" />
+    <title>盒子模型与伸缩盒对比</title>
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="all">
+        <!--传统盒子模型-->
+        <div class="box" id="box1">
+            <h5>标准盒模型</h5>
+            <div class="div1">margin
+                <div class="h1">border
+                    <div class="h1-1">padding
+                        <div class="h1-2">
+                            content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>width:60px;height:60px;</span><br/>
+            <span>content-box不包含padding和border</span>
+        </div>
+        <div class="box" id="box2">
+            <h5>伸缩盒模型</h5>
+            <div class="div2">margin
+                <div class="h2">border
+                    <div class="h2-1">padding
+                        <div class="h2-2">
+                            content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>width:120px;height:120px;</span><br/>
+            <span>border-box包含padding和border</span>
+        </div>
+        <!-- 伸缩盒模型 columns分栏 -->
+        <div class="flexbox">
+            <span>伸缩盒模型</span>
+            <article class="c1">
+                <p class="p">HTML5草案的前身名为 Web Applications 1.0，于2004年被WHATWG提出，于2007年被W3C接纳，并成立了新的 HTML 工作团队。 HTML 5 的第一份正式草案已于2008年1月22日公布。HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持</p>
+            </article>
+        </div>
+        <!-- 旧版盒子居中布局 -->
+        <div class="old">
+            <p class="o1"></p>
+            <p class="o2"></p>
+            <p class="o3"></p>
+        </div>
+        <!-- 伸缩盒模型 水平，垂直分栏 -->
+        <div class="d1">
+            <p class="p1">1
+            </p>
+            <p class="p2">2
+            </p>
+            <p class="p3">3
+            </p>
+        </div>
+        <div class="d2">
+            <p class="p4">
+            4
+            </p>
+            <p class="p5">
+            5
+            </p>
+            <p class="p6">
+            6
+            </p>
+        </div>
+    </div>
+</body>
+</html>

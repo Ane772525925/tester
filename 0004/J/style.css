@@ -1,0 +1,193 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"Microsoft Yahei";
+	font-size:16px;
+	color:#000;
+	text-align: center;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+
+/*   疑问    css content 如何自定义生成图标？*/
+
+/*布局*/
+header{
+	width:100%;
+	max-width:1280px;
+	height:70px;
+	margin:0 auto;
+}
+article{
+	width:100%;
+	height:1200px;
+}
+footer{
+	width:86%;
+	max-width:1280px;
+	height:50px;
+	margin:0 auto;
+}
+
+/*头部*/
+.container{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+
+}
+header>div{
+	width:86%;
+	height:70px;
+	margin:0 auto;
+	position:relative;
+}
+div.logo{
+	width:150px;
+	height:45px;
+	background:url(./image/logo.png) no-repeat 2px 0 transparent;
+	float:left;
+	position:relative;
+	top:15px;
+}
+nav.nav{
+	width:auto;
+	height:24px;
+	margin:0 auto auto 16s0px;  
+	/*原来logo设为float脱离文档流，此margin-left就不生效了 ，仅仅是130px距离盒子最左边的长度*/
+}
+ul{
+	list-style-type:none;
+	width:auto;
+	position:relative;
+	top:30px;
+
+}
+nav ul li{
+	margin-left:30px;
+	color:#1e90ff;
+	font:"Microsoft YaHei" 18px bolder;
+	float:left;
+	letter-spacing:1px;
+}
+
+form.input{
+	position:absolute;
+	top:20px;
+	right:0;
+}
+
+input[type=text]{
+	width:260px;
+	height:36px;
+	outline:0;
+	border:1px solid #aaa;
+	float:left;
+	text-indent:8px;
+	box-sizing:border-box;
+	border-right:1px solid transparent !important;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+input[type=submit]{
+	width:80px;
+	height:36px;
+	background:#00bfff;
+	float:left;
+	border:1px solid #00bfff;
+	box-sizing:border-box
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	color:#fff;
+}
+input[type=text]:hover{
+	border:1px solid #555;
+	border-right:1px solid transparent !important;
+}
+input[type=text]:focus{
+	border:1px solid #555;
+	border-right:1px solid transparent !important;
+}
+input[type=submit]:hover{
+	background:#38f;
+	border:1px solid #38f;
+}
+/*article*/
+
+div.img{
+	position:relative;
+	width:100%;
+	height:auto !important;  
+	height:550px;  
+	min-height:550px; 
+	display:block;
+	background:url(./image/001.jpg) no-repeat center;
+	background-size:100% 100%;
+}
+div.text{
+	width:86%;
+	height:500px;
+	margin:26px auto;
+}
+div.body{
+	display:block;
+	width:100%;
+	min-width:1280px;
+	margin:20px auto;
+}
+div.text>div>div.header{
+	width:400px;
+	height:50px;
+	margin:46px auto;
+	color:#000;
+	font-family:"Microsoft YaHei","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:42px;
+}
+.row{
+	width:100%;
+	margin:42px auto;
+	font-size:15px;
+}
+div>div.row>span{
+	display:inline-block;
+	width:312px;
+	min-height:50px;
+	height:auto;
+	text-align:justify;
+}
+div.row>span:not(:first-child){
+	margin-left:86px;
+}
+div>span>h2{
+	margin-bottom:10px;
+}
+/*news*/
+div.news{
+	width:100%;
+	margin:100px auto auto;
+}
+div.news>h1{
+	font-size:50px;
+}
+
+
+
+/*footer*/
+footer{
+	margin:0 auto;
+}
+footer p{
+	font-style:normal; 
+	text-align:left;
+	font-family:arial;
+	font-size:14px;
+	margin-top:10px;
+	color:#333;
+}
+footer p i{
+	color:#428BCA;
+	font-style:normal;
+}

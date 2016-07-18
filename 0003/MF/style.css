@@ -1,0 +1,209 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*总体设置*/
+h2{
+	text-align:center;
+	margin-top:100px;
+	font-family:arial;
+}
+#view{
+	width:180px;
+	height:180px;
+	position:absolute;
+	left:50%;
+    top:25%;
+    margin-left:-180px;
+}
+
+#box>div{
+	position:absolute;
+	height:180px;
+	width:180px;
+	border:0px solid #000;
+	/*background:rgba(255,200,100,0.8);*/
+    background:transparent;
+	text-align:center;
+	font-size:20px;
+}
+/*魔方的设置和六个面颜色*/
+#box>div>div{
+    float:left;
+    width:60px;
+    height:60px;
+    border:2px solid #000;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+.one>div{
+    background:#f00;
+}
+.two>div{
+    background:#0f0;    
+}
+.three>div{
+    background:#00f;
+}
+.four>div{
+    background:#ff0;
+}
+.five>div{
+    background:#ffa500;
+}
+.six>div{
+    background:#fff;
+}
+/*每个面的调节 兼容*/
+#box .one{
+    -webkit-transform:translateZ(90px);
+    -moz-transform:translateZ(90px);
+    -o-transform:translateZ(90px);
+    transform:translateZ(90px);
+}
+#box .two{
+	-webkit-transform:rotateX(-90deg) translateZ(90px);
+    -moz-transform:rotateX(-90deg) translateZ(90px);
+    -o-transform:rotateX(-90deg) translateZ(90px);
+    transform:rotateX(-90deg) translateZ(90px);
+}
+#box .three{
+	-webkit-transform:rotateY(90deg) rotateX(90deg)  translateZ(90px);
+    -moz-transform:rotateY(90deg) rotateX(90deg)  translateZ(90px);
+    -o-transform:rotateY(90deg) rotateX(90deg)  translateZ(90px);
+    transform:rotateY(90deg) rotateX(90deg)  translateZ(90px);
+}
+#box .four{
+	-webkit-transform:rotateY(180deg) rotateZ(90deg) translateZ(90px);
+    -moz-transform:rotateY(180deg) rotateZ(90deg) translateZ(90px);
+    -o-transform:rotateY(180deg) rotateZ(90deg) translateZ(90px);
+    transform:rotateY(180deg) rotateZ(90deg) translateZ(90px);
+}
+
+#box .five{
+	-webkit-transform:rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+    -moz-transform:rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+    -o-transform:rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+    transform:rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+}
+#box .six{
+	-webkit-transform:rotateY(90deg) translateZ(90px);
+    -moz-transform:rotateY(90deg) translateZ(90px);
+    -o-transform:rotateY(90deg) translateZ(90px);
+    transform:rotateY(90deg) translateZ(90px);
+}
+/*旋转动画设置*/
+#box{
+	margin:80px;
+	-webkit-animation:animation ease-in-out infinite 9s;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin:90px 90px 0;
+    -moz-animation:animation ease-in-out infinite 9s;
+    -moz-transform-style:preserve-3d;
+    -moz-transform-origin:90px 90px 0;
+    -o-animation:animation ease-in-out infinite 9s;
+    -o-transform-style:preserve-3d;
+    -o-transform-origin:90px 90px 0;
+    animation:animation ease-in-out infinite 9s;
+    transform-style:preserve-3d;
+    transform-origin:90px 90px 0;
+	/*-webkit-perspective-origin:-25% 40px;*/
+	/*-webkit-perspective:138px;*/
+}
+
+    @-webkit-keyframes animation{
+        16%{
+			-webkit-transform:rotateY(-90deg);
+        }
+        33%{
+        	-webkit-transform:rotateY(-90deg) rotateZ(135deg);
+        }
+        50%{
+        	-webkit-transform:rotateY(225deg) rotateZ(135deg);
+        }
+        66%{
+			-webkit-transform:rotateY(135deg) rotateX(135deg);
+        }
+        83%{
+        	-webkit-transform:rotateX(135deg);
+        }
+    }
+    
+    @-moz-keyframes animation{
+		16%{
+			-moz-transform:rotateY(-90deg);
+        }
+        33%{
+        	-moz-transform:rotateY(-90deg)rotateZ(135deg);
+        }
+        50%{
+        	-moz-transform:rotateY(225deg)rotateZ(135deg);
+        }
+        66%{
+			-moz-transform:rotateY(135deg)rotateX(135deg);
+        }
+        83%{
+        	-moz-transform:rotateX(135deg);
+        }
+    }
+    
+    @-o-keyframes animation{
+		16%{
+			-o-transform:rotateY(-90deg);
+        }
+        33%{
+        	-o-transform:rotateY(-90deg)rotateZ(135deg);
+        }
+        50%{
+        	-o-transform:rotateY(225deg)rotateZ(135deg);
+        }
+        66%{
+			-o-transform:rotateY(135deg)rotateX(135deg);
+        }
+        83%{
+        	-o-transform:rotateX(135deg);
+        }
+    }
+    
+/*  不兼容
+     @-ms-keyframes animation{
+		16%{
+			-ms-transform:rotateY(-90deg);
+        }
+        33%{
+        	-ms-transform:rotateY(-90deg)rotateZ(135deg);
+        }
+        50%{
+        	-ms-transform:rotateY(225deg)rotateZ(135deg);
+        }
+        66%{
+			-ms-transform:rotateY(135deg)rotateX(135deg);
+        }
+        83%{
+        	-ms-transform:rotateX(135deg);
+        }
+    }
+    */
+    @keyframes animation{
+		16%{
+			transform:rotateY(-90deg);
+        }
+        33%{
+        	transform:rotateY(-90deg)rotateZ(135deg);
+        }
+        50%{
+        	transform:rotateY(225deg)rotateZ(135deg);
+        }
+        66%{
+			transform:rotateY(135deg)rotateX(135deg);
+        }
+        83%{
+        	transform:rotateX(135deg);
+        }
+    }
+
+
+
+
+
+

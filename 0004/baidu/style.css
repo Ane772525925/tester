@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:640px) {
+    body {
+        position: absolute;
+        font-size: 13px;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        min-width: 800px;
+        min-height: 500px;
+    }
+    /*头部*/
+    header {
+        width: 450px;
+        height: 24px;
+        margin: 6px 0 0 0;
+        position: absolute;
+        top: 4px;
+        right: 2px;
+    }
+    li {
+        list-style: none;
+    }
+    header ul li {
+        float: left;
+        height: 20px;
+        margin: 0 8px;
+        line-height: 20px;
+    }
+    header ul li#li_123 {
+        font-family: arial;
+        font-weight: 600;
+    }
+    header ul li a {
+        color: #000;
+        text-align: center;
+        font-weight: 600;
+    }
+    header nav ul li a#li_a {
+        color: white;
+        background-color: #38f;
+        padding: 4px 3px;
+        margin-left: 3px;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+    header nav ul li a:hover {
+        color: blue;
+    }
+    header nav ul li a#li_a:hover {
+        background: #fff;
+        color: #000;
+    }
+    /*中间，百度一下logo和输入*/
+    div.box {
+        width: 645px;
+        margin: 15px auto;
+        padding: auto;
+        position:relative;
+        top:120px;
+    }
+    .box img{
+        margin: 0 auto;
+        width: 162px;
+        height: 60px;
+    }
+    .box .f1 {
+        width: 641px;
+        margin: 22px auto;
+    }
+    .box span.s1 input {
+        width: 530px;
+        height: 34px;
+        border: 1px solid #ccc;
+        text-indent: 7px;
+        outline: 0;
+    }
+    .bd {
+        float: left;
+    }
+    div.box form span.s1 {
+        position: relative;
+        float: left;
+        margin-left: 4px;
+    }
+    .box span.s1 input:focus {
+        border-color: #38f;
+    }
+    .box .s1 input:focus:hover {
+        border-color: #38f;
+    }
+    .box span.s1 input:hover {
+        border-color: #999;
+        border-right-color: transparent!important;
+    }
+    div.box form span.s1 span.photo {
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        margin-top: -8px;
+        height: 16px;
+        width: 18px;
+        background: #fff url(./img/image.png) no-repeat 0 0;
+        cursor: pointer;
+    }
+    div.box form span.s1 span.photo:hover {
+        background: #fff url(./img/image.png) no-repeat 0 -21px;
+    }
+    div.box form span input.bdyx {
+        width: 100px;
+        height: 36px;
+        color: white;
+        font-size: 15px;
+        background: #3385ff;
+        margin-left: -4px;
+    }
+    div.box form span.bd input {
+        border: 1px solid #3385ff;
+    }
+    div.box form span input.bdyx:hover {
+        background: #3377ff;
+        border: 1px solid #3385ff;
+    }
+    /*footer*/
+    footer {
+        line-height: 24px;
+        width: 360px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -180px;
+    }
+    footer div.f_1,
+    div.f_1 a {
+        color: #555;
+        font-family: arial;
+    }
+    div.f_1 a:hover {
+        color: blue;
+    }
+}
+/*老师有个疑问，为什么那个百度手机版能够伸缩，我用百分来，好像也不行啊？*/
+@media screen and (max-width:640px){
+	body{
+		position: absolute;
+        font-size: 13px;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background:#eee;
+        min-height:600px;
+	}
+
+    /*搜索盒子*/
+	.box{
+		position:absolute;
+		top:150px;
+        left:50%;
+        margin-left:-256px;
+        width:512px;
+        padding:auto;
+	}
+    .img{
+        width:162px;
+        height:60px;
+        margin:10px auto;
+    }
+	.img img{
+        width:162px;
+        height:60px;
+        margin:0 auto;
+        background:transparent;
+    }
+    .f1{
+        width:520px;
+        position:relative;
+    }
+    .photo{
+        display:none;
+    }
+    .s1{
+        float:left;
+        width:;
+    }
+    .s1 input{
+        width:434px;
+        height:34px;
+        border:1px solid #ccc;
+        outline:0;
+        text-indent:6px;
+        border:1px solid #aaa;
+    }
+    .bd{
+        float:left;
+    }
+    .bd .bdyx{
+        width:76px;
+        height:36px;
+        background:#38f;
+        border:1px solid #38f;
+        color:#fff;
+        font-size:14px;
+        letter-spacing:1px;
+        float:left;
+    }
+    /*中间的导航*/
+    header{
+        width:500px;
+        height:60px;
+        position:absolute;
+        top:280px;
+        left:50%;
+        margin-left:-265px;
+        background:#eee;
+    }
+    header li{
+        width:28px;
+        height:22px;
+        margin:23px 25px;
+        background:#eee;
+        float:left;
+        list-style:none;
+        background:url(./img/bd.png) no-repeat;
+    }
+    header li a{
+        position:relative;
+        top:38px;
+        text-decoration:none;
+        color:#555;
+        font-weight:bold;
+        font-family:arial;
+        text-align:center;
+    }
+    header .lic{
+        display:none;
+    }
+    /*疑问 请老师详细解释下这个位置，为什么有时是负值有时却是正值？  */
+    header li:first-child{
+        background-position:-173px -2px;     
+    }
+    header li:nth-child(2){
+        background:url(./img/bd.png) -57px -2px repeat;
+    }
+    header li:nth-child(3){
+        background:url(./img/bd.png) -114px -1px no-repeat;
+    }
+    header li:nth-child(4){
+        background:url(./img/bd.png) 2px -2px  no-repeat;
+    }
+    header li:nth-child(5){
+        background:url(./img/bd.png) -231px 0px no-repeat;
+    }
+    header li:last-child{
+        background:url(./img/bd.png) -276px 0px no-repeat;
+        width:56px !important;
+        margin:23px 14px !important;
+    }
+    /*脚部*/
+    footer{
+        font-family:arial;
+        font-size:11px;
+        line-height:18px;
+        width:320px;
+        height:42px;
+        position:absolute;
+        bottom:20px;
+        left:50%;
+        margin-left:-150px;
+    }
+    footer *{
+        color:#666;
+    }
+    footer a{
+        text-decoration:none;
+    }
+}

@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.tank {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+}
+/*炮塔*/
+.header {
+    height: 100px;
+    width: 500px;
+    top: 2%;
+    z-index: 9;
+}
+.tank div {
+    position: absolute;
+}
+.h1 {
+    width: 120px;
+    height: 46px;
+    box-sizing: border-box;
+    background: #808000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right-color: transparent!important;
+}
+.h2 {
+    left: 120px;
+    top: 0px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #808000;
+}
+.h3 {
+    height: 26px;
+    width: 20px;
+    background: #808000;
+    left: 120px;
+    top: 10px;
+}
+.h4 {
+    left: 120px;
+    top: 36px;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #808000;
+}
+.h5 {
+    left: 140px;
+    top: 13px;
+    height: 18px;
+    width: 260px;
+    background: #808000;
+}
+.h6 {
+    left: 390px;
+    top: 9px;
+    width: 66px;
+    height: 26px;
+    background: #808000;
+    border-radius: 3px;
+}
+/*炮身*/
+.body {
+    top: 30px;
+}
+.b1 {
+    left: 30px;
+    top: 70%;
+    width: 70px;
+    height: 40px;
+    background: #0f0;
+}
+.b2 {
+    left: -20px;
+    top: 30px;
+    width: 160px;
+    height: 20px;
+    background: #cd853f;
+}
+.b3 {
+    left: -40px;
+    top: 30px;
+    border-right: 20px solid #cd853f;
+    border-top: 20px solid transparent;
+}
+.b4 {
+    left: 140px;
+    top: 30px;
+    border-top: 20px solid transparent;
+    border-left: 50px solid #cd853f;
+}
+.b5 {
+    left: -66px;
+    top: 50px;
+    width: 300px;
+    height: 40px;
+    background: #98fb98;
+}
+.b6 {
+    left: -86px;
+    top: 50px;
+    border-right: 20px solid #98fb98;
+    border-top: 40px solid transparent;
+}
+.b7 {
+    left: 234px;
+    top: 50px;
+    border-top: 40px solid transparent;
+    border-left: 40px solid #98fb98;
+}
+/*炮脚*/
+.footer {
+    left: -140px;
+    top: 120px;
+}
+.f1 {
+    width: 500px;
+    height: 66px;
+    border-top: 5px solid #bc8f8f;
+    border-bottom: 5px solid #bc8f8f;
+    border-left: 5px solid #bc8f8f;
+    border-right: 5px solid #bc8f8f;
+    border-radius: 38px;
+    z-index: 9;
+}
+.f2,.f3,.f4,.f5,.f6 {
+    top: 4px;
+    width: 62px;
+    height: 62px;
+    border-radius: 36px;
+    border: 3px solid #b0e0e6;
+}
+.f2 {
+    left: 36px;
+}
+.f3 {
+    left: 131px;
+}
+.f4 {
+    left: 216px;
+}
+.f5 {
+    left: 311px;
+}
+.f6 {
+    left: 416px;
+}
+.f7,
+.f8,
+.f9,
+.f10,
+.f11 {
+    top: 35px;
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
+}
+.f7 {
+    left: 245px;
+}
+.f8,.f9,.f10,.f11 {
+    border: 1px solid #a0522d;
+}
+.f8 {
+    left: 66px;
+}
+.f9 {
+    left: 161px;
+}
+.f10 {
+    left: 341px;
+}
+.f11 {
+    left: 447px;
+}
+/*动画 ms不兼容*/
+.tank {
+    margin: 80px;
+    -webkit-animation: animation ease-in-out infinite 9s;
+    -moz-animation: animation ease-in-out infinite 9s;
+    -o-animation: animation ease-in-out infinite 9s;
+    animation: animation ease-in-out infinite 9s;
+}
+@-webkit-keyframes animation {
+    0% {
+        -webkit-transform: translateX(-900px);
+    }
+    100% {
+        -webkit-transform: translateX(1200px);
+    }
+}
+@-moz-keyframes animation {
+    0% {
+        -moz-transform: translateX(-900px);
+    }
+    100% {
+        -moz-transform: translateX(1200px);
+    }
+}
+@-o-keyframes animation {
+    0% {
+        -o-transform: translateX(-900px);
+    }
+    100% {
+        -o-transform: translateX(1200px);
+    }
+}
+@keyframes animation {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(1200px);
+    }
+}

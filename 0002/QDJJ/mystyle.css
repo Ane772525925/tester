@@ -1,0 +1,99 @@
+*{
+	margin:0 auto;
+}
+
+body{
+	background-image:url(./images/bg.gif);
+	display:block;
+	margin:20px auto;
+	font-size:12px;
+	text-decoration:none;
+}
+
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: gray;
+}
+td,th{
+	display:table-cell;
+}
+table.t1 td span{
+    color:red;
+}
+td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+}
+
+a:link{
+    color: #333333;
+    text-decoration: none
+}
+
+a:visited{
+    color: #333333;
+    text-decoration: none
+}
+
+a:hover{
+    color: #CC0000;
+    text-decoration: none
+}
+
+.link:link{
+    color: #0000cc;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.link:visited {
+    color: #0000cc;
+    font-size: 12px;
+    text-decoration: underline
+}
+
+.link:hover{
+    color: #ff0000;
+    font-size: 12px;
+    text-decoration: underline
+}
+.blue{
+    color: #0000ff
+}
+.t {
+    color: #333333;
+    font-size: 14px;
+}
+
+.t:link{
+    color: #003399;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.t:visited{
+    color: #003399;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.t:hover{
+    color: #CC0000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.s{
+    font-weight: bold;
+}
+table.t3 span{
+	font-family:arial;
+}
+table.t3 img{
+	vertical-align:baseline;
+}
