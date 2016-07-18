@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>测试</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <script type="text/javascript">
+    var arr = ["a","x","b","d","m","a","k","m","p","j","a"];
+    // 计数新对象
+    var count={};
+    // 索引新对象
+    var pos={};
+
+    // 遍历数组
+    for(var i=0;i<arr.length;i++){
+        var char=arr[i];
+
+        //获取每个相同字母的次数和位置
+        if(count[char]){
+            count[char]+=1;
+            pos[char]+=","+i;
+        }else{
+            count[char]=1;
+            pos[char]=i;
+        }
+    }
+    // 用sort排序
+    var max=Object.keys(count).sort(function(a,b){return count[a]<count[b];})[0];
+
+    console.log(max);
+    console.log(count[max]);
+    console.log(pos[max]);
+    </script>
+</head>
+<body>
+<div class="div"></div>
+</body>
+</html>
