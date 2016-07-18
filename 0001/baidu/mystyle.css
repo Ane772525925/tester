@@ -1,0 +1,237 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	height:100%;
+}
+.all{
+	background-color: #FFFFFF;
+	text-align: center;
+	font: 12px arial;
+	height:100%;
+	width:100%;
+	min-width: 800px;
+    min-height: 600px;
+    position:relative;
+
+}
+/*   nav  */
+
+header{
+	height: 31px;
+	width: 457px;
+	margin: 9px 0 0 0;
+	position: absolute;
+	top: 0;
+	right:0;
+	
+}
+header ul li{
+	list-style: none;
+	float: left;
+	height: 15px;
+	margin-left: 15px;
+	padding-left: 5px;
+	color: #000;
+	line-height: 18px;
+	
+}
+header ul li#li_123{
+	font-family: arial;
+	font-weight: bold;
+}
+header nav ul li.li{
+	font-weight: 600;
+}
+header nav ul li a{
+	color: #000000;
+	text-align: center;
+}
+header nav ul li a:hover{
+	color: blue;
+}
+header nav ul li a#li_a{
+	color: white;
+	background: #38f;
+	border-radius: 2px;
+	padding: 4px 3px;
+	margin-left: 3px;
+	text-decoration: none;
+}
+header nav ul li a#li_a:hover{
+	background: #ffffff;
+	color: #000000;
+}
+
+/*  body  */
+article{
+	display: block;
+}
+article.box{
+	width: 630px;
+	position: relative;
+	top:38px;
+	margin:auto;
+	padding: 8px auto;
+}
+article.box div.img{
+	margin: 0 auto;
+}
+article.box div.img img{
+	width: 270px;
+	height: 129px;
+}
+article.box form.f1{
+	width: 660px;
+	margin: 22px auto 0px;
+}
+article.box form.f1 span.s1 input{
+	text-indent:7px;
+	width:536px;
+	height: 34px;
+	outline:0;
+	border:1px solid #ddd;
+}
+article.box form.f1 span.s1 input:hover{
+	border-color:#ccc;
+} 
+article.box form span.s1{
+	position: relative;
+	float:left;
+}
+
+article.box form span.s1 span.photo{
+	z-index: 1;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    margin-top: -9px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(./img/image.png) no-repeat 0 0;
+    cursor: pointer;
+}
+article.box form span.s1 span.photo:hover{
+    background: #fff url(./img/image.png) no-repeat 0 -21px;
+}
+article.box form span.s1 input:focus:hover{
+	border-color: #38F;
+	height: 34px;
+}
+article.box form span.s1 input:focus{
+	border-color:#38F;
+}
+article.box form span input.bdyx{
+	width: 100px;
+	height: 36px;
+	color: white;
+	font-size: 15px;
+	background: #3388ff;
+	letter-spacing: 2px;
+}
+article.box form span.bd{
+	position:relative;
+	float:left;
+}    
+article.box form span.bd input{
+	border: 1px solid #3385ff;
+	margin-left:-1px;
+}
+article.box form span input.bdyx:hover{
+	background: #3377ff;
+	border: 1px solid #3377ff;
+}
+
+
+
+
+/*  footer  这个居中和position定位混在一起真的很头疼 */
+
+footer{
+	height: 50px;
+	width: 746px;
+	position:absolute;
+	bottom:30px;
+	text-align:left;
+	color:#999999;
+	left:50%;
+	margin-left:-330px;
+}
+footer p a{
+	color:#999999;
+}
+
+footer div.f_left,div.f_left div.left1,div.f_left div.left2{
+	float: left;
+}
+div.left1 div,div.left2 div{
+	float: left;
+}
+footer div.f_left div.left1 div.left1_img img{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: transparent 0 0 no-repeat;
+	border-width:0;
+}
+footer div.f_left div.left2 div.left2_img img{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: transparent 0 0 no-repeat;
+	margin-left: 28px;
+}
+div.f_left p{
+	padding:5px;
+}
+div.f_left b{
+	color:#555555;
+}
+
+div.left1_2,div.left2_2{
+	margin-left: 15px;
+}
+div.left1,div.left2{
+	margin:0px auto;
+}
+footer div.f_right{
+	float:left;
+	margin: -10px auto auto 38px;
+	width:450px;
+	line-height:18px;
+	width: 400px;
+	padding-top:1px;
+}
+footer div.f_right p{
+	margin:5px auto;
+}
+div.f_right .a1,div.f_right .a2,div.f_right .a3{
+	float:left;
+}
+a.a1{
+margin-left:2px;
+}
+div.f_right .a2{
+	margin-left:70px;
+}
+div.f_right .a3{
+	margin-left:65px;
+}
+.c_icon_1{
+	display:inline-block;
+	background: transparent url(./img/every.png) no-repeat -600px -96px;
+	width: 14px;
+	height: 17px;
+	margin-left:-4px;
+	vertical-align:middle;
+}
+.c_icon_2{
+	display:inline-block;
+	background: transparent url(./img/every.png) no-repeat -623px -96px;
+	width: 14px;
+	height: 17px;
+	margin-right: 6px;
+	vertical-align:middle;
+}
+

@@ -1,0 +1,174 @@
+#{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+
+	font-size:13px;
+	text-align: center;
+
+}
+div{
+	display: block;
+}
+/*头部*/
+header#header{
+	height: 31px;
+	min-width: 900px;
+	margin: 10px 5px 0px 0px;
+	position: relative;
+}
+#hd_nav{
+	float: right;
+}
+ul{
+	list-style: none;
+}
+
+header ul li{
+	float: left;
+	height: 15px;
+	margin-left: 10px;
+	padding-left: 5px;
+	line-height: 20px;
+	
+}
+header ul li#li_123{
+	font-family: arial;
+	font-weight：bold;
+}
+header nav ul li a{
+	color: #000000;
+	text-align: center;
+}
+header nav ul li a{
+	font-weight: 600;
+}
+header nav ul li a#li_a{
+	left: -2px;
+	color: white;
+	background: #38f;
+	border-radius: 3px;
+	padding: 6px 4px 5px;
+	margin-left: 3px;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color: blue;
+}
+header nav ul li a#li_a:hover{
+	background: #ffffff;
+	color: #000000;
+}
+
+
+/*中间，百度一下logo和输入*/
+
+div.box{
+	width: 1000px;
+	top: 300px;
+	margin: 15px auto;
+	padding: 0px auto;
+}
+div.box div.img img{
+	margin: 0 auto;
+	width: 270px;
+	height: 129px;
+}
+.box form.f1 span.s1 input{
+	width:530px;
+	height: 30px;
+}
+.box form.f1{
+	width: 641px;
+	margin: 22px auto;
+}
+div.box form span.s1{
+	position: relative;
+}
+
+div.box form span.s1 span.photo{
+	z-index: 1;
+    position: absolute;                      /* 老师，这个position，可以和我讲解一下吗？不是非常明白！*/
+    right: 13px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(./img/image.png) no-repeat 0 0;
+    cursor: pointer;
+}
+div.box form span.s1 span.photo:hover{
+    background: #fff url(./img/image.png) no-repeat 0 -21px;
+}
+div.box form span.s1 input:focus{
+	border: 1px solid blue;
+	box-shadow: 0px 0px 0px blue;
+	height: 31px;
+}
+div.box form span.bd{
+    display: inline-block;
+    z-index: 0;
+    vertical-align: top;
+}
+div.box form span input.bdyx{
+	width: 100px;
+	height: 36px;
+	color: white;
+	font-size: 15px;
+	background: #3385ff;
+	letter-spacing: 1px;
+	margin-left: -7px;
+}
+
+div.box form span.bd input{
+	border: 1px solid #3385ff;
+}
+div.box form span input.bdyx::after{
+	outline-color:red;
+	border:5px solid red;
+	box-shadow:none;
+	
+}
+
+
+
+
+/*footer*/
+
+div.footer{
+	margin: 0 auto;
+	height: 30px;
+	width: 500px;
+	position: relative;
+	top: 260px;
+}
+div.footer div.f_1,div.f_1 a{
+	color:#555555;
+}
+div.f_1 a:hover{
+	color: blue;
+}
+/*
+
+老师，不好意思，我实在不知道是什么原因，只好用red代替了！！请老师见谅，不要算在内。想提前进入下周任务教学。
+
+div.f_1 i.icon_1{
+	z-index: 3;
+	background: red url(./img/icon.png) no-repeat 600px -96px;
+	width: 14px;
+	height: 17px;
+	margin-left: 3px;
+	top: -2px;
+	position: absolute;
+}
+div.f_1 i.icon_2{
+	z-index: 3;
+	background: red url(./img/icon.png) no-repeat 623px -96px;
+	width: 14px;
+	height: 17px;
+	top: 27px;
+	margin-left: -16px;
+	position: absolute;
+}
+*/
